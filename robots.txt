@@ -1,0 +1,4 @@
+# Unofficial recruit study tool. Open to anyone with the link,
+# but kept out of search results. Delete this file to allow indexing.
+User-agent: *
+Disallow: /

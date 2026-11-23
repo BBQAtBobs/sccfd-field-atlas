@@ -1,0 +1,37 @@
+import asyncio
+from playwright.async_api import async_playwright
+async def main():
+    async with async_playwright() as p:
+        b=await p.chromium.launch(executable_path="/usr/bin/google-chrome",args=["--no-sandbox"])
+        errs=[]
+        ctx=await b.new_context(viewport={"width":1440,"height":900})
+        pg=await ctx.new_page(); pg.on("pageerror",lambda e: errs.append(str(e)))
+        await pg.goto("http://localhost:8765/index.html#station-74"); await pg.wait_for_timeout(1800)
+        await pg.screenshot(path="build/e_card74.png")
+        await pg.click("#tabs button[data-mode=study]"); await pg.wait_for_timeout(1200)
+        await pg.screenshot(path="build/e_study.png")
+        await pg.click("button[data-game=pin]"); await pg.wait_for_timeout(1200)
+        await pg.screenshot(path="build/e_pin_ask.png")
+        await pg.mouse.click(500,450); await pg.wait_for_timeout(1300)
+        await pg.screenshot(path="build/e_pin_reveal.png")
+        for i in range(9):
+            await pg.keyboard.press("Enter"); await pg.wait_for_timeout(900); await pg.mouse.click(400+i*20,400); await pg.wait_for_timeout(500)
+        await pg.keyboard.press("Enter"); await pg.wait_for_timeout(1200)
+        await pg.screenshot(path="build/e_pin_done.png")
+        await pg.click("button[data-act=quit] >> nth=0"); await pg.wait_for_timeout(800)
+        await pg.click("button[data-game=name]"); await pg.wait_for_timeout(1200)
+        await pg.click(".choices button >> nth=0"); await pg.wait_for_timeout(1000)
+        await pg.screenshot(path="build/e_name.png")
+        await pg.click("button[data-act=quit] >> nth=0"); await pg.wait_for_timeout(800)
+        await pg.click("button[data-game=rig]"); await pg.wait_for_timeout(1300)
+        box=await pg.evaluate("(()=>{const m=document.querySelector('.mk.game');const r=m.getBoundingClientRect();return [r.x+r.width/2,r.y+r.height/2]})()")
+        await pg.mouse.click(*box); await pg.wait_for_timeout(1000)
+        await pg.screenshot(path="build/e_rig.png")
+        await ctx.close()
+        ctx=await b.new_context(viewport={"width":390,"height":844}); pg=await ctx.new_page(); pg.on("pageerror",lambda e: errs.append("mob "+str(e)))
+        await pg.goto("http://localhost:8765/index.html#study"); await pg.wait_for_timeout(1500)
+        await pg.click("button[data-game=pin]"); await pg.wait_for_timeout(1200)
+        await pg.mouse.click(200,300); await pg.wait_for_timeout(1300)
+        await pg.screenshot(path="build/e_mob_pin.png")
+        print("\n".join(errs) or "no errors"); await b.close()
+asyncio.run(main())

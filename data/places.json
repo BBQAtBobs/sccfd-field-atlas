@@ -1,0 +1,653 @@
+{
+ "meta": {
+  "dataVersion": "2026-11-22",
+  "sources": {
+   "policy602": {
+    "title": "Santa Clara County EMS Policy 602, 911 EMS Patient Destination, Table B (effective Sept 1, 2025)",
+    "url": "https://files.santaclaracounty.gov/exjcpb1541/2025-08/administrative-order-2025-006.pdf"
+   },
+   "emsar": {
+    "title": "Santa Clara County EMS Agency 2024 Annual Report",
+    "url": "https://files.santaclaracounty.gov/exjcpb1541/2025-10/2024-ems-annual-report_final.pdf"
+   },
+   "osm": {
+    "title": "Locations: OpenStreetMap",
+    "url": "https://www.openstreetmap.org/"
+   }
+  },
+  "infoNote": "L&D, VAD, SAFE and helipads are listed by the EMS Agency for information only; it doesn't designate them."
+ },
+ "designations": {
+  "trauma": {
+   "label": "Adult trauma center",
+   "short": "Trauma"
+  },
+  "trauma-peds": {
+   "label": "Pediatric trauma center",
+   "short": "Peds trauma"
+  },
+  "burn": {
+   "label": "Burn center",
+   "short": "Burn"
+  },
+  "stroke-comp": {
+   "label": "Comprehensive stroke center",
+   "short": "Comp. stroke"
+  },
+  "stroke": {
+   "label": "Primary stroke center",
+   "short": "Stroke"
+  },
+  "stemi": {
+   "label": "STEMI center",
+   "short": "STEMI"
+  },
+  "peds-adv": {
+   "label": "Advanced pediatric center",
+   "short": "Adv. peds"
+  },
+  "peds": {
+   "label": "General pediatric center",
+   "short": "Peds"
+  },
+  "ld": {
+   "label": "Labor & delivery",
+   "short": "L&D",
+   "info": true
+  },
+  "vad": {
+   "label": "VAD center",
+   "short": "VAD",
+   "info": true
+  },
+  "safe": {
+   "label": "SAFE (sexual assault exam) center",
+   "short": "SAFE",
+   "info": true
+  },
+  "helipad": {
+   "label": "Helipad",
+   "short": "Helipad",
+   "info": true
+  }
+ },
+ "hospitals": [
+  {
+   "id": "ECH",
+   "name": "El Camino Hospital Mountain View",
+   "city": "Mountain View",
+   "lat": 37.36823,
+   "lon": -122.07984,
+   "short": "El Camino MV",
+   "des": [
+    "stroke-comp",
+    "stroke",
+    "stemi",
+    "peds",
+    "ld"
+   ]
+  },
+  {
+   "id": "LGH",
+   "name": "El Camino Hospital Los Gatos",
+   "city": "Los Gatos",
+   "lat": 37.26306,
+   "lon": -121.96914,
+   "short": "El Camino LG",
+   "des": [
+    "stroke",
+    "ld"
+   ]
+  },
+  {
+   "id": "GSH",
+   "name": "Good Samaritan Hospital",
+   "city": "San Jose",
+   "lat": 37.2523,
+   "lon": -121.94571,
+   "short": "Good Sam",
+   "des": [
+    "stroke-comp",
+    "stroke",
+    "stemi",
+    "peds",
+    "ld",
+    "helipad"
+   ]
+  },
+  {
+   "id": "KSC",
+   "name": "Kaiser Santa Clara",
+   "city": "Santa Clara",
+   "lat": 37.33665,
+   "lon": -121.9992,
+   "short": "Kaiser SC",
+   "des": [
+    "stroke-comp",
+    "stroke",
+    "stemi",
+    "peds-adv",
+    "peds",
+    "vad",
+    "ld",
+    "helipad"
+   ]
+  },
+  {
+   "id": "OCH",
+   "name": "O'Connor Hospital",
+   "city": "San Jose",
+   "lat": 37.32823,
+   "lon": -121.93848,
+   "short": "O'Connor",
+   "des": [
+    "stroke",
+    "stemi",
+    "peds",
+    "ld"
+   ]
+  },
+  {
+   "id": "PAV",
+   "name": "Palo Alto VA Hospital",
+   "city": "Palo Alto",
+   "lat": 37.40555,
+   "lon": -122.14082,
+   "short": "Palo Alto VA",
+   "des": [],
+   "note": "Veterans may request it when transport is consistent with policy."
+  },
+  {
+   "id": "RSJ",
+   "name": "Regional Medical Center",
+   "city": "San Jose",
+   "lat": 37.36315,
+   "lon": -121.84829,
+   "short": "Regional",
+   "des": [
+    "trauma",
+    "stroke-comp",
+    "stroke",
+    "stemi",
+    "peds",
+    "helipad"
+   ],
+   "trauma": "Level II",
+   "note": "Santa Clara Valley Healthcare took over on April 1, 2025 and restored trauma, STEMI and stroke services."
+  },
+  {
+   "id": "SLH",
+   "name": "Saint Louise Regional Hospital",
+   "city": "Gilroy",
+   "lat": 37.03656,
+   "lon": -121.57178,
+   "short": "Saint Louise",
+   "des": [
+    "stroke",
+    "peds",
+    "ld",
+    "safe",
+    "helipad"
+   ]
+  },
+  {
+   "id": "STH",
+   "name": "Kaiser San Jose",
+   "city": "San Jose",
+   "lat": 37.24007,
+   "lon": -121.80088,
+   "short": "Kaiser SJ",
+   "des": [
+    "stroke",
+    "stemi",
+    "peds",
+    "ld"
+   ]
+  },
+  {
+   "id": "SUH",
+   "name": "Stanford Hospital",
+   "city": "Palo Alto",
+   "lat": 37.43441,
+   "lon": -122.17489,
+   "short": "Stanford",
+   "des": [
+    "trauma",
+    "trauma-peds",
+    "stroke-comp",
+    "stroke",
+    "stemi",
+    "peds-adv",
+    "peds",
+    "vad",
+    "ld",
+    "safe",
+    "helipad"
+   ],
+   "trauma": "Level I",
+   "note": "Adults go to the 500P entrance (1199 Welch Rd). Kids under 15 and patients over 20 weeks pregnant in active labor go to 300P (900 Quarry Rd Ext)."
+  },
+  {
+   "id": "VMC",
+   "name": "Santa Clara Valley Medical Center",
+   "city": "San Jose",
+   "lat": 37.31313,
+   "lon": -121.93532,
+   "short": "Valley Med",
+   "des": [
+    "trauma",
+    "trauma-peds",
+    "burn",
+    "stroke",
+    "stemi",
+    "peds-adv",
+    "peds",
+    "ld",
+    "safe",
+    "helipad"
+   ],
+   "trauma": "Level I",
+   "note": "The county's only burn center. Also home to Emergency Psychiatric Services (EPS)."
+  }
+ ],
+ "kinds": {
+  "school": {
+   "label": "Schools"
+  },
+  "park": {
+   "label": "Parks & open space"
+  },
+  "peak": {
+   "label": "Peaks"
+  },
+  "venue": {
+   "label": "Venues & landmarks"
+  },
+  "tech": {
+   "label": "Tech campuses"
+  },
+  "ems": {
+   "label": "Dispatch & EMS"
+  }
+ },
+ "landmarks": [
+  {
+   "id": "apple-park",
+   "name": "Apple Park",
+   "kind": "tech",
+   "city": "Cupertino",
+   "lat": 37.33367,
+   "lon": -122.00828,
+   "note": "Apple's ring-shaped headquarters"
+  },
+  {
+   "id": "nvidia",
+   "name": "NVIDIA headquarters",
+   "kind": "tech",
+   "city": "Santa Clara",
+   "lat": 37.37273,
+   "lon": -121.96469,
+   "note": "NVIDIA's headquarters campus"
+  },
+  {
+   "id": "levis",
+   "name": "Levi's Stadium",
+   "kind": "venue",
+   "city": "Santa Clara",
+   "lat": 37.40299,
+   "lon": -121.96965,
+   "note": "49ers stadium"
+  },
+  {
+   "id": "sap",
+   "name": "SAP Center",
+   "kind": "venue",
+   "city": "San Jose",
+   "lat": 37.33286,
+   "lon": -121.90122,
+   "note": "Sharks arena, downtown"
+  },
+  {
+   "id": "valley-fair",
+   "name": "Westfield Valley Fair",
+   "kind": "venue",
+   "city": "San Jose / Santa Clara",
+   "lat": 37.32533,
+   "lon": -121.94484,
+   "note": "Large mall on Stevens Creek Blvd"
+  },
+  {
+   "id": "mountain-winery",
+   "name": "The Mountain Winery",
+   "kind": "venue",
+   "city": "Saratoga",
+   "lat": 37.26012,
+   "lon": -122.06479,
+   "note": "Hilltop concert venue above Saratoga"
+  },
+  {
+   "id": "montalvo",
+   "name": "Villa Montalvo",
+   "kind": "venue",
+   "city": "Saratoga",
+   "lat": 37.24179,
+   "lon": -122.03188,
+   "note": "Arts center and county park"
+  },
+  {
+   "id": "hakone",
+   "name": "Hakone Gardens",
+   "kind": "venue",
+   "city": "Saratoga",
+   "lat": 37.25209,
+   "lon": -122.04213,
+   "note": "Japanese gardens in the hills"
+  },
+  {
+   "id": "gilroy-gardens",
+   "name": "Gilroy Gardens",
+   "kind": "venue",
+   "city": "Gilroy",
+   "lat": 37.00502,
+   "lon": -121.62937,
+   "note": "Theme park next to Station 69"
+  },
+  {
+   "id": "sjc",
+   "name": "San Jose Airport (SJC)",
+   "kind": "venue",
+   "city": "San Jose",
+   "lat": 37.36333,
+   "lon": -121.92934,
+   "note": "Mineta San Jose International"
+  },
+  {
+   "id": "winchester-house",
+   "name": "Winchester Mystery House",
+   "kind": "venue",
+   "city": "San Jose",
+   "lat": 37.31829,
+   "lon": -121.95099,
+   "note": "Tourist landmark on Winchester Blvd"
+  },
+  {
+   "id": "foothill",
+   "name": "Foothill College",
+   "kind": "school",
+   "city": "Los Altos Hills",
+   "lat": 37.36172,
+   "lon": -122.1283,
+   "note": "Community college next to Station 74"
+  },
+  {
+   "id": "deanza",
+   "name": "De Anza College",
+   "kind": "school",
+   "city": "Cupertino",
+   "lat": 37.3177,
+   "lon": -122.04456,
+   "note": "Community college on Stevens Creek"
+  },
+  {
+   "id": "wvc",
+   "name": "West Valley College",
+   "kind": "school",
+   "city": "Saratoga",
+   "lat": 37.26377,
+   "lon": -122.00969,
+   "note": "Community college in Saratoga"
+  },
+  {
+   "id": "stanford-u",
+   "name": "Stanford University",
+   "kind": "school",
+   "city": "Stanford",
+   "lat": 37.43131,
+   "lon": -122.16937,
+   "note": "University campus"
+  },
+  {
+   "id": "lahs",
+   "name": "Los Altos High School",
+   "kind": "school",
+   "city": "Los Altos",
+   "lat": 37.38682,
+   "lon": -122.10911,
+   "note": ""
+  },
+  {
+   "id": "mvhs",
+   "name": "Monta Vista High School",
+   "kind": "school",
+   "city": "Cupertino",
+   "lat": 37.31459,
+   "lon": -122.05675,
+   "note": ""
+  },
+  {
+   "id": "chs",
+   "name": "Cupertino High School",
+   "kind": "school",
+   "city": "Cupertino",
+   "lat": 37.31932,
+   "lon": -122.00911,
+   "note": ""
+  },
+  {
+   "id": "hhs",
+   "name": "Homestead High School",
+   "kind": "school",
+   "city": "Cupertino",
+   "lat": 37.33572,
+   "lon": -122.04831,
+   "note": ""
+  },
+  {
+   "id": "shs",
+   "name": "Saratoga High School",
+   "kind": "school",
+   "city": "Saratoga",
+   "lat": 37.26564,
+   "lon": -122.02936,
+   "note": ""
+  },
+  {
+   "id": "phs",
+   "name": "Prospect High School",
+   "kind": "school",
+   "city": "Saratoga",
+   "lat": 37.29125,
+   "lon": -121.99984,
+   "note": ""
+  },
+  {
+   "id": "whs",
+   "name": "Westmont High School",
+   "kind": "school",
+   "city": "Campbell",
+   "lat": 37.2718,
+   "lon": -121.98585,
+   "note": ""
+  },
+  {
+   "id": "lghs",
+   "name": "Los Gatos High School",
+   "kind": "school",
+   "city": "Los Gatos",
+   "lat": 37.22338,
+   "lon": -121.97664,
+   "note": ""
+  },
+  {
+   "id": "rancho",
+   "name": "Rancho San Antonio",
+   "kind": "park",
+   "city": "Cupertino / Los Altos Hills",
+   "lat": 37.3322,
+   "lon": -122.08908,
+   "note": "Busy trailhead preserve"
+  },
+  {
+   "id": "fremont-older",
+   "name": "Fremont Older Preserve",
+   "kind": "park",
+   "city": "Cupertino / Saratoga",
+   "lat": 37.28929,
+   "lon": -122.06148,
+   "note": "Open space preserve"
+  },
+  {
+   "id": "stevens-creek",
+   "name": "Stevens Creek County Park",
+   "kind": "park",
+   "city": "Cupertino",
+   "lat": 37.28926,
+   "lon": -122.07951,
+   "note": "Reservoir park in the hills"
+  },
+  {
+   "id": "sanborn",
+   "name": "Sanborn County Park",
+   "kind": "park",
+   "city": "Saratoga",
+   "lat": 37.22556,
+   "lon": -122.07722,
+   "note": "Redwood park off Hwy 9"
+  },
+  {
+   "id": "vasona",
+   "name": "Vasona Lake County Park",
+   "kind": "park",
+   "city": "Los Gatos",
+   "lat": 37.24092,
+   "lon": -121.97011,
+   "note": "Lake park in Los Gatos"
+  },
+  {
+   "id": "lexington",
+   "name": "Lexington Reservoir",
+   "kind": "park",
+   "city": "Los Gatos",
+   "lat": 37.1961,
+   "lon": -121.99552,
+   "note": "Reservoir along Hwy 17"
+  },
+  {
+   "id": "st-joseph",
+   "name": "St. Joseph's Hill Preserve",
+   "kind": "park",
+   "city": "Los Gatos",
+   "lat": 37.20807,
+   "lon": -121.97819,
+   "note": "Hiking preserve above Los Gatos"
+  },
+  {
+   "id": "uvas",
+   "name": "Uvas Canyon County Park",
+   "kind": "park",
+   "city": "Morgan Hill",
+   "lat": 37.07718,
+   "lon": -121.79846,
+   "note": "Waterfall trails in South County"
+  },
+  {
+   "id": "mt-madonna",
+   "name": "Mount Madonna County Park",
+   "kind": "park",
+   "city": "Gilroy",
+   "lat": 37.01019,
+   "lon": -121.70106,
+   "note": "Park on Hecker Pass (Hwy 152)"
+  },
+  {
+   "id": "coyote-lake",
+   "name": "Coyote Lake Harvey Bear Ranch",
+   "kind": "park",
+   "city": "Gilroy / San Martin",
+   "lat": 37.09656,
+   "lon": -121.57755,
+   "note": "Lake park east of San Martin"
+  },
+  {
+   "id": "anderson",
+   "name": "Anderson Lake",
+   "kind": "park",
+   "city": "Morgan Hill",
+   "lat": 37.16339,
+   "lon": -121.63044,
+   "note": "Largest reservoir in the county"
+  },
+  {
+   "id": "metcalf",
+   "name": "Metcalf Motorcycle County Park",
+   "kind": "park",
+   "city": "San Jose",
+   "lat": 37.23152,
+   "lon": -121.72611,
+   "note": "Off-highway motorcycle park"
+  },
+  {
+   "id": "black-mtn",
+   "name": "Black Mountain",
+   "kind": "peak",
+   "city": "Los Altos Hills",
+   "lat": 37.31737,
+   "lon": -122.1479,
+   "note": "Peak above Los Altos Hills"
+  },
+  {
+   "id": "umunhum",
+   "name": "Mount Umunhum",
+   "kind": "peak",
+   "city": "Los Gatos",
+   "lat": 37.16044,
+   "lon": -121.89886,
+   "note": "Peak with the radar tower"
+  },
+  {
+   "id": "loma-prieta",
+   "name": "Loma Prieta",
+   "kind": "peak",
+   "city": "Santa Cruz Mountains",
+   "lat": 37.11092,
+   "lon": -121.84428,
+   "note": "Highest peak in the Santa Cruz Mountains"
+  },
+  {
+   "id": "mt-hamilton",
+   "name": "Mount Hamilton (Lick Observatory)",
+   "kind": "peak",
+   "city": "Diablo Range",
+   "lat": 37.34318,
+   "lon": -121.64529,
+   "note": "Diablo Range peak, Lick Observatory"
+  },
+  {
+   "id": "county-comm",
+   "name": "County Communications (9-1-1)",
+   "kind": "ems",
+   "city": "San Jose",
+   "lat": 37.28867,
+   "lon": -121.86518,
+   "note": "County 9-1-1 dispatch for SCCFD, Sheriff and EMS"
+  },
+  {
+   "id": "ems-agency",
+   "name": "County EMS Agency",
+   "kind": "ems",
+   "city": "San Jose",
+   "lat": 37.3141,
+   "lon": -121.93736,
+   "note": "Santa Clara County EMS Agency"
+  },
+  {
+   "id": "calfire-scu",
+   "name": "CAL FIRE Santa Clara Unit HQ",
+   "kind": "ems",
+   "city": "Morgan Hill",
+   "lat": 37.10996,
+   "lon": -121.63761,
+   "note": "CAL FIRE Santa Clara Unit"
+  }
+ ]
+}

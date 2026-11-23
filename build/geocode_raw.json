@@ -1,0 +1,382 @@
+{
+ "67": {
+  "place_id": 323505494,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 424980522,
+  "lat": "37.1177348",
+  "lon": "-121.6401297",
+  "category": "highway",
+  "type": "tertiary",
+  "place_rank": 26,
+  "importance": 0.05338892271305406,
+  "addresstype": "tertiary",
+  "name": "Vineyard Boulevard",
+  "display_name": "Vineyard Boulevard, Morgan Hill, Santa Clara County, California, 95038, United States",
+  "boundingbox": [
+   "37.1148677",
+   "37.1206665",
+   "-121.6424378",
+   "-121.6377588"
+  ]
+ },
+ "68": {
+  "place_id": 386006749,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 8942898,
+  "lat": "37.0544476",
+  "lon": "-121.5818315",
+  "category": "place",
+  "type": "house",
+  "place_rank": 30,
+  "importance": 9.99999999995449e-06,
+  "addresstype": "place",
+  "name": "",
+  "display_name": "10810, No Name Uno, Gilroy, Santa Clara County, California, 95020, United States",
+  "boundingbox": [
+   "37.0543976",
+   "37.0544976",
+   "-121.5818815",
+   "-121.5817815"
+  ]
+ },
+ "69": {
+  "place_id": 323321786,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 1124427781,
+  "lat": "37.0117494",
+  "lon": "-121.6228891",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.05338918974593725,
+  "addresstype": "primary",
+  "name": "Hecker Pass Highway",
+  "display_name": "Hecker Pass Highway, Gilroy, Santa Clara County, California, 95020, United States",
+  "boundingbox": [
+   "37.0116802",
+   "37.0118672",
+   "-121.6266502",
+   "-121.6191297"
+  ]
+ },
+ "70": null,
+ "71": {
+  "place_id": 322730419,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 105821038,
+  "lat": "37.3234159",
+  "lon": "-122.0271499",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.9312581063508315e-05,
+  "addresstype": "amenity",
+  "name": "Cupertino Fire Station",
+  "display_name": "Cupertino Fire Station, 20215, Stevens Creek Boulevard, Cupertino, Santa Clara County, California, 95014, United States",
+  "boundingbox": [
+   "37.3232292",
+   "37.3236011",
+   "-122.0274207",
+   "-122.0269915"
+  ]
+ },
+ "72": {
+  "place_id": 322698422,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 377433956,
+  "lat": "37.2979926",
+  "lon": "-122.0416615",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.722667277022992e-05,
+  "addresstype": "amenity",
+  "name": "Seven Springs Fire Station",
+  "display_name": "Seven Springs Fire Station, 21000, Seven Springs Parkway, Seven Springs, Cupertino, Santa Clara County, California, 95014, United States",
+  "boundingbox": [
+   "37.2977644",
+   "37.2981486",
+   "-122.0418463",
+   "-122.0414771"
+  ]
+ },
+ "73": {
+  "place_id": 324029359,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "node",
+  "osm_id": 464804696,
+  "lat": "37.2591845",
+  "lon": "-122.0314805",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.722667277022992e-05,
+  "addresstype": "amenity",
+  "name": "Saratoga Fire Station",
+  "display_name": "Saratoga Fire Station, 14380, Saratoga Avenue, Saratoga, Santa Clara County, California, 95070, United States",
+  "boundingbox": [
+   "37.2591345",
+   "37.2592345",
+   "-122.0315305",
+   "-122.0314305"
+  ]
+ },
+ "74": {
+  "place_id": 319386380,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 78914140,
+  "lat": "37.3589270",
+  "lon": "-122.1289867",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.4487678339772904e-05,
+  "addresstype": "amenity",
+  "name": "El Monte Fire Station",
+  "display_name": "El Monte Fire Station, 12355, El Monte Road, Los Altos Hills, Santa Clara County, California, 94022, United States",
+  "boundingbox": [
+   "37.3587421",
+   "37.3591172",
+   "-122.1291903",
+   "-122.1287242"
+  ]
+ },
+ "75": {
+  "place_id": 323972654,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 380778608,
+  "lat": "37.3847285",
+  "lon": "-122.1136647",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.750133516437045e-05,
+  "addresstype": "amenity",
+  "name": "Los Altos Fire Station",
+  "display_name": "Los Altos Fire Station, 10, Almond Avenue, Los Altos, Santa Clara County, California, 94022, United States",
+  "boundingbox": [
+   "37.3845403",
+   "37.3848516",
+   "-122.1139336",
+   "-122.1133957"
+  ]
+ },
+ "76": {
+  "place_id": 322770361,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 381303438,
+  "lat": "37.3576724",
+  "lon": "-122.0933214",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.750133516437045e-05,
+  "addresstype": "amenity",
+  "name": "Loyola Fire Station",
+  "display_name": "Loyola Fire Station, 765, Fremont Avenue, Loyola Corners, Los Altos, Santa Clara County, California, 94022, United States",
+  "boundingbox": [
+   "37.3575311",
+   "37.3577863",
+   "-122.0934657",
+   "-122.0931554"
+  ]
+ },
+ "77": {
+  "place_id": 323316456,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 377389151,
+  "lat": "37.3215811",
+  "lon": "-122.0702821",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.9312581063508315e-05,
+  "addresstype": "amenity",
+  "name": "Monta Vista Fire Station",
+  "display_name": "Monta Vista Fire Station, 22620, Stevens Creek Boulevard, Cupertino, Santa Clara County, California, 95014, United States",
+  "boundingbox": [
+   "37.3215178",
+   "37.3217404",
+   "-122.0707239",
+   "-122.0701709"
+  ]
+ },
+ "78": {
+  "place_id": 388533895,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 416894765,
+  "lat": "37.2410454",
+  "lon": "-122.0006310",
+  "category": "place",
+  "type": "house",
+  "place_rank": 30,
+  "importance": 9.99999999995449e-06,
+  "addresstype": "place",
+  "name": "",
+  "display_name": "18870, Saratoga-Los Gatos Road, Austin, Monte Sereno, Santa Clara County, California, 95030, United States",
+  "boundingbox": [
+   "37.2409954",
+   "37.2410954",
+   "-122.0006810",
+   "-122.0005810"
+  ]
+ },
+ "79": {
+  "place_id": 324086069,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "node",
+  "osm_id": 368168551,
+  "lat": "37.2826583",
+  "lon": "-122.0194700",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.722667277022992e-05,
+  "addresstype": "amenity",
+  "name": "West Valley Fire Station",
+  "display_name": "West Valley Fire Station, 19800, Cox Avenue, Blue Hills, Saratoga, Santa Clara County, California, 95070, United States",
+  "boundingbox": [
+   "37.2826083",
+   "37.2827083",
+   "-122.0195200",
+   "-122.0194200"
+  ]
+ },
+ "80": {
+  "place_id": 323523950,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 1070387784,
+  "lat": "37.2724965",
+  "lon": "-121.9583867",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.8026245517616806e-05,
+  "addresstype": "amenity",
+  "name": "Sunnyoaks Fire Station",
+  "display_name": "Sunnyoaks Fire Station, 485, West Sunnyoaks Avenue, Campbell, Santa Clara County, California, 95008, United States",
+  "boundingbox": [
+   "37.2723774",
+   "37.2726814",
+   "-121.9585416",
+   "-121.9582317"
+  ]
+ },
+ "81": {
+  "place_id": 323054545,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "node",
+  "osm_id": 368168552,
+  "lat": "37.2854600",
+  "lon": "-121.9358378",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.8026245517616806e-05,
+  "addresstype": "amenity",
+  "name": "Campbell Fire Station",
+  "display_name": "Campbell Fire Station, 123, Union Avenue, Campbell, Santa Clara County, California, 95008, United States",
+  "boundingbox": [
+   "37.2854100",
+   "37.2855100",
+   "-121.9358878",
+   "-121.9357878"
+  ]
+ },
+ "82": {
+  "place_id": 322440450,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 125199750,
+  "lat": "37.2322655",
+  "lon": "-121.9581922",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.86045624475016e-05,
+  "addresstype": "amenity",
+  "name": "Shannon Fire Station",
+  "display_name": "Shannon Fire Station, 16565, Shannon Road, Shannon, Los Gatos, Santa Clara County, California, 95030, United States",
+  "boundingbox": [
+   "37.2319551",
+   "37.2325660",
+   "-121.9584944",
+   "-121.9578872"
+  ]
+ },
+ "83": {
+  "place_id": 323999537,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "node",
+  "osm_id": 647699753,
+  "lat": "37.2267772",
+  "lon": "-121.9800212",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.86045624475016e-05,
+  "addresstype": "amenity",
+  "name": "Los Gatos Fire Station",
+  "display_name": "Los Gatos Fire Station, 306, University Avenue, Creekside Village, Los Gatos, Santa Clara County, California, 95030, United States",
+  "boundingbox": [
+   "37.2267272",
+   "37.2268272",
+   "-121.9800712",
+   "-121.9799712"
+  ]
+ },
+ "84": null,
+ "85": {
+  "place_id": 322349092,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "node",
+  "osm_id": 3513457593,
+  "lat": "37.2523098",
+  "lon": "-121.9677138",
+  "category": "amenity",
+  "type": "fire_station",
+  "place_rank": 30,
+  "importance": 5.86045624475016e-05,
+  "addresstype": "amenity",
+  "name": "Winchester Fire Station",
+  "display_name": "Winchester Fire Station, 14850, Winchester Boulevard, Vasona Junction, Los Gatos, Santa Clara County, California, 95030, United States",
+  "boundingbox": [
+   "37.2522598",
+   "37.2523598",
+   "-121.9677638",
+   "-121.9676638"
+  ]
+ },
+ "0": {
+  "place_id": 385988324,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 541916516,
+  "lat": "37.2675399",
+  "lon": "-121.9538815",
+  "category": "place",
+  "type": "house",
+  "place_rank": 30,
+  "importance": 9.99999999995449e-06,
+  "addresstype": "place",
+  "name": "",
+  "display_name": "1315, Dell Avenue, Campbell, Santa Clara County, California, 95008, United States",
+  "boundingbox": [
+   "37.2674899",
+   "37.2675899",
+   "-121.9539315",
+   "-121.9538315"
+  ]
+ }
+}

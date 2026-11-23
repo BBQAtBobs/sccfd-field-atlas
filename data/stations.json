@@ -1,0 +1,1331 @@
+{
+ "meta": {
+  "title": "SCCFD Field Atlas",
+  "dataVersion": "2026-11-22",
+  "notes": "Single source of truth. Edit this file and every screen updates. precision: 'building' = pin confirmed by two sources within ~40 m; 'address' = Google address pin only. streetView.view: good / partial / none.",
+  "sources": {
+   "facilities": {
+    "title": "SCCFD Facilities and Fire Stations page",
+    "url": "https://www.sccfd.org/?p=1303",
+    "checked": "2026-11-22"
+   },
+   "suppression": {
+    "title": "SCCFD Fire Suppression & Rescue page",
+    "url": "https://www.sccfd.org/?p=132",
+    "checked": "2026-11-22"
+   },
+   "ar2025": {
+    "title": "SCCFD 2025 Annual Report (org chart, p.7; station list, p.8)",
+    "url": "https://www.sccfd.org/wp-content/uploads/2026/05/2026.4.20_SCCFD_Annual-Report_FINAL-WEB.pdf",
+    "checked": "2026-11-22"
+   },
+   "geo": {
+    "title": "Station pins checked against Google Maps listings and addresses; Street View aimed from the address street",
+    "url": "https://www.google.com/maps",
+    "checked": "2026-11-22"
+   },
+   "photos": {
+    "title": "Station photos from SCCFD Facilities and Fire Stations page",
+    "url": "https://www.sccfd.org/facilities-and-fire-stations/",
+    "checked": "2026-11-22"
+   }
+  }
+ },
+ "department": {
+  "name": "Santa Clara County Fire Department",
+  "short": "SCCFD",
+  "stations": 19,
+  "dailyStaffing": 79,
+  "frontlineApparatus": 38,
+  "battalionChiefsOnDuty": 3,
+  "serves": [
+   "Campbell",
+   "Cupertino",
+   "Los Altos",
+   "Los Altos Hills",
+   "Los Gatos",
+   "Monte Sereno",
+   "San Martin",
+   "Saratoga",
+   "Unincorporated Santa Clara County"
+  ],
+  "engineStaffing": "Captain, Firefighter/EMT, Firefighter/Paramedic",
+  "fourPersonUnits": "Trucks, rescues and the haz mat unit add one Firefighter/EMT (4 total)",
+  "southCountyAnnexed": "2025-07-01",
+  "sources": [
+   "suppression",
+   "ar2025"
+  ],
+  "serviceArea": "423 sq mi",
+  "population": "244,531"
+ },
+ "battalions": [
+  {
+   "id": "B74",
+   "name": "Battalion 74",
+   "kind": "battalion",
+   "hq": 74,
+   "stations": [
+    71,
+    74,
+    75,
+    76,
+    77
+   ],
+   "area": "North: Los Altos, Los Altos Hills, Cupertino"
+  },
+  {
+   "id": "S72",
+   "name": "Safety 72",
+   "kind": "group",
+   "hq": 72,
+   "stations": [
+    72,
+    73,
+    78,
+    79
+   ],
+   "area": "Cupertino foothills, Saratoga, Quito",
+   "note": "Safety 72 is SCCFD's on-duty Safety Officer. On the 2025 org chart, Stations 72, 73, 78 and 79 are grouped under Safety 72, alongside Battalions 68, 74 and 83.",
+   "short": "S stands for Safety. Safety 72 is the Safety Officer, not a battalion chief."
+  },
+  {
+   "id": "B83",
+   "name": "Battalion 83",
+   "kind": "battalion",
+   "hq": 83,
+   "stations": [
+    80,
+    81,
+    82,
+    83,
+    84,
+    85
+   ],
+   "area": "Campbell, Los Gatos, Redwood Estates"
+  },
+  {
+   "id": "B68",
+   "name": "Battalion 68",
+   "kind": "battalion",
+   "hq": 68,
+   "stations": [
+    67,
+    68,
+    69,
+    70
+   ],
+   "area": "South County: San Martin, unincorporated Morgan Hill and Gilroy, Pacheco Pass"
+  }
+ ],
+ "unitTypes": {
+  "engine": {
+   "label": "Engine",
+   "code": "E"
+  },
+  "truck": {
+   "label": "Truck",
+   "code": "T"
+  },
+  "rescue": {
+   "label": "Rescue",
+   "code": "R"
+  },
+  "hazmat": {
+   "label": "Haz Mat",
+   "code": "HM"
+  },
+  "breathing": {
+   "label": "Breathing Support",
+   "code": "BS"
+  },
+  "safety": {
+   "label": "Safety",
+   "code": "S"
+  },
+  "battalion": {
+   "label": "Battalion",
+   "code": "B"
+  },
+  "tender": {
+   "label": "Water Tender",
+   "code": "WT"
+  },
+  "utility": {
+   "label": "Utility",
+   "code": "U"
+  },
+  "usar": {
+   "label": "Urban Search & Rescue",
+   "code": "USAR"
+  },
+  "oes": {
+   "label": "OES",
+   "code": "OES"
+  },
+  "trailer": {
+   "label": "Trailer",
+   "code": "TR"
+  },
+  "antique": {
+   "label": "Antique",
+   "code": ""
+  }
+ },
+ "unitStatus": {
+  "frontline": "Staffed daily",
+  "select": "Select call (cross-staffed)",
+  "reserve": "Reserve",
+  "tandem": "Moves with another unit",
+  "antique": "Antique",
+  "unlisted": "Staffing not listed"
+ },
+ "stations": [
+  {
+   "num": 67,
+   "name": "Vineyard",
+   "battalion": "B68",
+   "address": "16075 Vineyard Blvd, Suite C",
+   "city": "Morgan Hill",
+   "zip": "95037",
+   "jurisdiction": "Unincorporated",
+   "lat": 37.115813,
+   "lon": -121.638207,
+   "precision": "building",
+   "onDuty": 3,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 9
+   },
+   "built": "1978 (remodeled 2025)",
+   "size": "1,834 sq ft",
+   "bays": null,
+   "owner": "Private",
+   "southCounty": true,
+   "units": [
+    {
+     "type": "engine",
+     "num": "67",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "engine",
+     "num": "667",
+     "status": "unlisted"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.115667,
+    "lon": -121.638542,
+    "heading": 61,
+    "view": "good",
+    "note": "Station is a suite in an office building."
+   },
+   "photo": {
+    "src": "images/stations/67.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 68,
+   "name": "Masten",
+   "battalion": "B68",
+   "address": "10810 No Name Uno",
+   "city": "Gilroy",
+   "zip": "95020",
+   "jurisdiction": "Unincorporated",
+   "lat": 37.057282,
+   "lon": -121.582569,
+   "precision": "building",
+   "onDuty": 4,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 9
+   },
+   "built": "1963",
+   "size": "6,812 sq ft",
+   "bays": null,
+   "owner": "SCCFD",
+   "southCounty": true,
+   "units": [
+    {
+     "type": "engine",
+     "num": "68",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "battalion",
+     "num": "68",
+     "status": "frontline",
+     "staff": 1
+    },
+    {
+     "type": "tender",
+     "num": "68",
+     "status": "unlisted"
+    },
+    {
+     "type": "utility",
+     "num": "",
+     "status": "unlisted"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.057211,
+    "lon": -121.582886,
+    "heading": 74,
+    "view": "good"
+   },
+   "photo": {
+    "src": "images/stations/68.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 69,
+   "name": "Treehaven",
+   "battalion": "B68",
+   "address": "3052 Hecker Pass Hwy",
+   "city": "Gilroy",
+   "zip": "95020",
+   "jurisdiction": "Unincorporated",
+   "lat": 37.01112,
+   "lon": -121.627783,
+   "precision": "building",
+   "onDuty": 3,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 9
+   },
+   "built": "1969",
+   "size": "2,100 sq ft",
+   "bays": null,
+   "owner": "City of Gilroy",
+   "southCounty": true,
+   "landmark": "Next to Gilroy Gardens, set back from Hecker Pass Hwy",
+   "units": [
+    {
+     "type": "engine",
+     "num": "69",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "tender",
+     "num": "69",
+     "status": "unlisted"
+    },
+    {
+     "type": "engine",
+     "num": "369",
+     "status": "unlisted"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.011647,
+    "lon": -121.62779,
+    "heading": 179,
+    "view": "none",
+    "note": "Station is set back from Hwy 152 behind trees."
+   },
+   "photo": {
+    "src": "images/stations/69.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 70,
+   "name": "Casa de Fruta",
+   "battalion": "B68",
+   "address": "10031 Pacheco Pass Hwy",
+   "city": "Hollister",
+   "zip": "95023",
+   "jurisdiction": "Unincorporated",
+   "lat": 36.987916,
+   "lon": -121.382616,
+   "precision": "address",
+   "onDuty": 3,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 9
+   },
+   "built": "2023",
+   "size": "1,000 sq ft",
+   "bays": null,
+   "owner": "Private",
+   "southCounty": true,
+   "landmark": "In the Casa de Fruta complex on Pacheco Pass (Hwy 152). Mailing city is Hollister, but it sits in Santa Clara County. SCCFD's photo shows modular buildings.",
+   "units": [
+    {
+     "type": "engine",
+     "num": "370",
+     "staff": 3,
+     "status": "frontline"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 36.988246,
+    "lon": -121.384315,
+    "heading": 104,
+    "view": "none",
+    "note": "Only a distant view from Hwy 152; the station's exact spot in the Casa de Fruta complex isn't confirmed."
+   },
+   "photo": {
+    "src": "images/stations/70.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 71,
+   "name": "Cupertino",
+   "battalion": "B74",
+   "address": "20215 Stevens Creek Blvd",
+   "city": "Cupertino",
+   "zip": "95014",
+   "jurisdiction": "Cupertino",
+   "lat": 37.323409,
+   "lon": -122.02714,
+   "precision": "building",
+   "onDuty": 7,
+   "roster": {
+    "captains": 6,
+    "ffEngineers": 15
+   },
+   "built": "2000 (original 1948)",
+   "size": "12,775 sq ft",
+   "bays": "3-bay, triple-deep, drive-through",
+   "owner": "SCCFD",
+   "units": [
+    {
+     "type": "engine",
+     "num": "71",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "truck",
+     "num": "71",
+     "staff": 4,
+     "status": "frontline"
+    },
+    {
+     "type": "engine",
+     "num": "371",
+     "status": "select"
+    },
+    {
+     "type": "oes",
+     "num": "5262",
+     "status": "unlisted",
+     "note": "OES Communications Unit"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.322973,
+    "lon": -122.027135,
+    "heading": 360,
+    "view": "good"
+   },
+   "photo": {
+    "src": "images/stations/71.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 72,
+   "name": "Seven Springs",
+   "battalion": "S72",
+   "address": "21000 Seven Springs Pkwy",
+   "city": "Cupertino",
+   "zip": "95014",
+   "jurisdiction": "Cupertino",
+   "lat": 37.297981,
+   "lon": -122.041673,
+   "precision": "building",
+   "onDuty": 8,
+   "roster": {
+    "captains": 6,
+    "ffEngineers": 15
+   },
+   "built": "1992",
+   "size": "9,120 sq ft",
+   "bays": "3-bay, double-deep, drive-through",
+   "owner": "SCCFD",
+   "units": [
+    {
+     "type": "engine",
+     "num": "72",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "hazmat",
+     "num": "72",
+     "staff": 4,
+     "status": "frontline"
+    },
+    {
+     "type": "breathing",
+     "num": "72",
+     "status": "tandem",
+     "note": "Runs in tandem with Haz Mat 72"
+    },
+    {
+     "type": "safety",
+     "num": "72",
+     "staff": 1,
+     "status": "frontline"
+    },
+    {
+     "type": "hazmat",
+     "num": "172",
+     "status": "reserve"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.298294,
+    "lon": -122.04168,
+    "heading": 179,
+    "view": "good"
+   },
+   "photo": {
+    "src": "images/stations/72.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 73,
+   "name": "Saratoga",
+   "battalion": "S72",
+   "address": "14380 Saratoga Ave",
+   "city": "Saratoga",
+   "zip": "95070",
+   "jurisdiction": "Saratoga",
+   "lat": 37.259026,
+   "lon": -122.031447,
+   "precision": "building",
+   "onDuty": 7,
+   "roster": {
+    "captains": 6,
+    "ffEngineers": 15
+   },
+   "built": "2004 (building purchased 1957)",
+   "size": "15,435 sq ft",
+   "bays": "3-bay double-deep + 1-bay single-deep, back-in",
+   "owner": "Saratoga Fire District",
+   "units": [
+    {
+     "type": "engine",
+     "num": "73",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "rescue",
+     "num": "73",
+     "staff": 4,
+     "status": "frontline"
+    },
+    {
+     "type": "engine",
+     "num": "373",
+     "status": "select"
+    },
+    {
+     "type": "engine",
+     "num": "173",
+     "status": "reserve"
+    },
+    {
+     "type": "engine",
+     "num": "178",
+     "status": "reserve"
+    },
+    {
+     "type": "antique",
+     "num": "",
+     "status": "antique",
+     "note": "1928 Model A"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.25935,
+    "lon": -122.031558,
+    "heading": 165,
+    "view": "good"
+   },
+   "photo": {
+    "src": "images/stations/73.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 74,
+   "name": "El Monte",
+   "battalion": "B74",
+   "address": "12355 El Monte Rd",
+   "city": "Los Altos Hills",
+   "zip": "94024",
+   "jurisdiction": "Los Altos Hills",
+   "lat": 37.358919,
+   "lon": -122.128963,
+   "precision": "building",
+   "onDuty": 5,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 9
+   },
+   "built": "1996 (original location 1963)",
+   "size": "9,650 sq ft",
+   "bays": "2-bay, double-deep, drive-through",
+   "owner": "Los Altos Hills County Fire District (building); Foothill-De Anza CCD (land)",
+   "landmark": "Sits on Foothill-De Anza Community College District land",
+   "units": [
+    {
+     "type": "rescue",
+     "num": "74",
+     "staff": 4,
+     "status": "frontline"
+    },
+    {
+     "type": "battalion",
+     "num": "74",
+     "staff": 1,
+     "status": "frontline"
+    },
+    {
+     "type": "truck",
+     "num": "74",
+     "status": "select"
+    },
+    {
+     "type": "engine",
+     "num": "374",
+     "status": "select"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.35845,
+    "lon": -122.12932,
+    "heading": 31,
+    "view": "partial",
+    "note": "Station sits back from El Monte Rd in the trees; only part of it shows."
+   },
+   "photo": {
+    "src": "images/stations/74.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 75,
+   "name": "Los Altos",
+   "battalion": "B74",
+   "address": "10 Almond Ave",
+   "city": "Los Altos",
+   "zip": "94022",
+   "jurisdiction": "Los Altos",
+   "lat": 37.384725,
+   "lon": -122.113683,
+   "precision": "building",
+   "onDuty": 3,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 6
+   },
+   "built": "1968",
+   "size": "9,350 sq ft",
+   "bays": "3-bay, double-deep, drive-through",
+   "owner": "City of Los Altos",
+   "units": [
+    {
+     "type": "engine",
+     "num": "75",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "engine",
+     "num": "675",
+     "status": "select"
+    },
+    {
+     "type": "engine",
+     "num": "175",
+     "status": "reserve"
+    },
+    {
+     "type": "antique",
+     "num": "",
+     "status": "antique",
+     "note": "1929 Model A"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.38496,
+    "lon": -122.113683,
+    "heading": 180,
+    "view": "good"
+   },
+   "photo": {
+    "src": "images/stations/75.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 76,
+   "name": "Loyola",
+   "battalion": "B74",
+   "address": "765 Fremont Ave",
+   "city": "Los Altos",
+   "zip": "94024",
+   "jurisdiction": "Los Altos",
+   "lat": 37.35766,
+   "lon": -122.093321,
+   "precision": "building",
+   "onDuty": 3,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 6
+   },
+   "built": "1953",
+   "size": "2,400 sq ft",
+   "bays": "2-bay, single-deep, drive-through",
+   "owner": "City of Los Altos",
+   "units": [
+    {
+     "type": "engine",
+     "num": "76",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "engine",
+     "num": "176",
+     "status": "reserve"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.35753,
+    "lon": -122.093478,
+    "heading": 44,
+    "view": "good"
+   },
+   "photo": {
+    "src": "images/stations/76.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 77,
+   "name": "Monta Vista",
+   "battalion": "B74",
+   "address": "22620 Stevens Creek Blvd",
+   "city": "Cupertino",
+   "zip": "95014",
+   "jurisdiction": "Cupertino",
+   "lat": 37.321651,
+   "lon": -122.070311,
+   "precision": "building",
+   "onDuty": 3,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 6
+   },
+   "built": "1998 (original 1966)",
+   "size": "7,100 sq ft",
+   "bays": "2-bay, single-deep, back-in",
+   "owner": "SCCFD",
+   "units": [
+    {
+     "type": "engine",
+     "num": "77",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "engine",
+     "num": "377",
+     "status": "select"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.321923,
+    "lon": -122.07032,
+    "heading": 179,
+    "view": "good"
+   },
+   "photo": {
+    "src": "images/stations/77.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 78,
+   "name": "Quito",
+   "battalion": "S72",
+   "address": "18870 Saratoga-Los Gatos Rd",
+   "city": "Los Gatos",
+   "zip": "95030",
+   "jurisdiction": "Los Gatos / Monte Sereno",
+   "lat": 37.241161,
+   "lon": -122.002269,
+   "precision": "building",
+   "onDuty": 3,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 6
+   },
+   "built": "1948",
+   "size": "5,400 sq ft",
+   "bays": "3-bay, single-deep, back-in",
+   "owner": "SCCFD",
+   "units": [
+    {
+     "type": "engine",
+     "num": "78",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "tender",
+     "num": "78",
+     "status": "select"
+    },
+    {
+     "type": "utility",
+     "num": "78",
+     "status": "reserve"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.241451,
+    "lon": -122.002177,
+    "heading": 194,
+    "view": "good"
+   },
+   "photo": {
+    "src": "images/stations/78.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 79,
+   "name": "West Valley",
+   "battalion": "S72",
+   "address": "19800 Cox Ave",
+   "city": "Saratoga",
+   "zip": "95070",
+   "jurisdiction": "Saratoga",
+   "lat": 37.28266,
+   "lon": -122.019392,
+   "precision": "building",
+   "onDuty": 3,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 6
+   },
+   "built": "1965",
+   "size": "3,137 sq ft",
+   "bays": "2-bay, single-deep, back-in, plus detached 1-bay garage",
+   "owner": "SCCFD",
+   "units": [
+    {
+     "type": "engine",
+     "num": "79",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "engine",
+     "num": "679",
+     "status": "select"
+    },
+    {
+     "type": "battalion",
+     "num": "179",
+     "status": "reserve"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.282911,
+    "lon": -122.019386,
+    "heading": 181,
+    "view": "good"
+   },
+   "photo": {
+    "src": "images/stations/79.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 80,
+   "name": "Sunnyoaks",
+   "battalion": "B83",
+   "address": "485 W Sunnyoaks Ave",
+   "city": "Campbell",
+   "zip": "95008",
+   "jurisdiction": "Campbell",
+   "lat": 37.272515,
+   "lon": -121.958387,
+   "precision": "building",
+   "onDuty": 3,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 6
+   },
+   "built": "1969",
+   "size": "6,042 sq ft",
+   "bays": "2-bay, double-deep, drive-through",
+   "owner": "City of Campbell",
+   "landmark": "Shares the site with the McCormack Training Center (4-story training tower)",
+   "units": [
+    {
+     "type": "engine",
+     "num": "80",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "engine",
+     "num": "680",
+     "status": "select"
+    },
+    {
+     "type": "engine",
+     "num": "880",
+     "status": "reserve"
+    },
+    {
+     "type": "antique",
+     "num": "23",
+     "status": "antique",
+     "note": "Engine 23, 1961 American LaFrance"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.272199,
+    "lon": -121.958382,
+    "heading": 359,
+    "view": "good"
+   },
+   "photo": {
+    "src": "images/stations/80.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 81,
+   "name": "Campbell",
+   "battalion": "B83",
+   "address": "123 Union Ave",
+   "city": "Campbell",
+   "zip": "95008",
+   "jurisdiction": "Campbell",
+   "lat": 37.285392,
+   "lon": -121.935845,
+   "precision": "building",
+   "onDuty": 3,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 6
+   },
+   "built": "1982",
+   "size": "9,292 sq ft",
+   "bays": "4-bay, single-deep, back-in",
+   "owner": "City of Campbell",
+   "units": [
+    {
+     "type": "engine",
+     "num": "81",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "truck",
+     "num": "181",
+     "status": "reserve"
+    },
+    {
+     "type": "antique",
+     "num": "25",
+     "status": "antique",
+     "note": "Squad 25"
+    },
+    {
+     "type": "antique",
+     "num": "20",
+     "status": "antique",
+     "note": "Engine 20"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.285374,
+    "lon": -121.935447,
+    "heading": 273,
+    "view": "good"
+   },
+   "photo": {
+    "src": "images/stations/81.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 82,
+   "name": "Shannon",
+   "battalion": "B83",
+   "address": "16565 Shannon Rd",
+   "city": "Los Gatos",
+   "zip": "95032",
+   "jurisdiction": "Los Gatos",
+   "lat": 37.23244,
+   "lon": -121.958113,
+   "precision": "building",
+   "onDuty": 3,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 6
+   },
+   "built": "1959",
+   "size": "3,152 sq ft (765 sq ft basement)",
+   "bays": "2-bay, single-deep, drive-through",
+   "owner": "Town of Los Gatos",
+   "landmark": "Same address as the Shannon Maintenance Shop",
+   "units": [
+    {
+     "type": "engine",
+     "num": "82",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "engine",
+     "num": "382",
+     "status": "select"
+    },
+    {
+     "type": "utility",
+     "num": "82",
+     "status": "select"
+    },
+    {
+     "type": "trailer",
+     "num": "782",
+     "status": "select",
+     "note": "Decon 782 trailer"
+    },
+    {
+     "type": "trailer",
+     "num": "782",
+     "status": "select",
+     "note": "Wood 782 trailer"
+    },
+    {
+     "type": "antique",
+     "num": "101",
+     "status": "antique",
+     "note": "Engine 101, 1936 Dodge hose wagon"
+    },
+    {
+     "type": "antique",
+     "num": "1",
+     "status": "antique",
+     "note": "Squad 1, 1962 GMC/Van Pelt"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.231875,
+    "lon": -121.958252,
+    "heading": 11,
+    "view": "partial",
+    "note": "A street tree blocks part of the front."
+   },
+   "photo": {
+    "src": "images/stations/82.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 83,
+   "name": "Los Gatos",
+   "battalion": "B83",
+   "address": "306 University Ave",
+   "city": "Los Gatos",
+   "zip": "95030",
+   "jurisdiction": "Los Gatos",
+   "lat": 37.226821,
+   "lon": -121.979872,
+   "precision": "building",
+   "onDuty": 8,
+   "roster": {
+    "captains": 6,
+    "ffEngineers": 15
+   },
+   "built": "1963 (original location 1927)",
+   "size": "6,812 sq ft",
+   "bays": "2-bay, double-deep, drive-through",
+   "owner": "Town of Los Gatos",
+   "units": [
+    {
+     "type": "engine",
+     "num": "83",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "rescue",
+     "num": "83",
+     "staff": 4,
+     "status": "frontline"
+    },
+    {
+     "type": "battalion",
+     "num": "83",
+     "staff": 1,
+     "status": "frontline"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.226895,
+    "lon": -121.980124,
+    "heading": 110,
+    "view": "good"
+   },
+   "photo": {
+    "src": "images/stations/83.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 84,
+   "name": "Redwood",
+   "battalion": "B83",
+   "address": "21452 Madrone Dr",
+   "city": "Redwood Estates",
+   "zip": "95033",
+   "jurisdiction": "Redwood Estates",
+   "lat": 37.15714,
+   "lon": -121.984165,
+   "precision": "building",
+   "onDuty": 3,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 6
+   },
+   "built": "2023",
+   "size": "8,202 sq ft",
+   "bays": "2-bay, single-deep, pull-through",
+   "owner": "SCCFD (building); Redwood Estates Services Assn (land)",
+   "landmark": "Up Hwy 17 in the Santa Cruz Mountains",
+   "units": [
+    {
+     "type": "engine",
+     "num": "84",
+     "staff": 3,
+     "status": "frontline"
+    },
+    {
+     "type": "engine",
+     "num": "684",
+     "status": "select"
+    },
+    {
+     "type": "utility",
+     "num": "84",
+     "status": "reserve"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.156912,
+    "lon": -121.984081,
+    "heading": 344,
+    "view": "none",
+    "note": "Google Street View doesn't cover Madrone Dr."
+   },
+   "photo": {
+    "src": "images/stations/84.jpg",
+    "credit": "SCCFD"
+   }
+  },
+  {
+   "num": 85,
+   "name": "Winchester",
+   "battalion": "B83",
+   "address": "14850 Winchester Blvd",
+   "city": "Los Gatos",
+   "zip": "95030",
+   "jurisdiction": "Los Gatos",
+   "lat": 37.252009,
+   "lon": -121.967533,
+   "precision": "building",
+   "onDuty": 4,
+   "roster": {
+    "captains": 3,
+    "ffEngineers": 9
+   },
+   "built": "1963",
+   "size": "2,812 sq ft",
+   "bays": "2-bay, single-deep, drive-through",
+   "owner": "SCCFD",
+   "landmark": "Same address as the Winchester Mechanic Shop",
+   "units": [
+    {
+     "type": "truck",
+     "num": "85",
+     "staff": 4,
+     "status": "frontline"
+    },
+    {
+     "type": "usar",
+     "num": "85",
+     "status": "select"
+    }
+   ],
+   "sources": [
+    "ar2025",
+    "facilities",
+    "geo",
+    "photos"
+   ],
+   "streetView": {
+    "lat": 37.252245,
+    "lon": -121.968045,
+    "heading": 120,
+    "view": "partial",
+    "note": "View is from up Winchester Blvd; the station is in the distance."
+   },
+   "photo": {
+    "src": "images/stations/85.jpg",
+    "credit": "SCCFD"
+   }
+  }
+ ],
+ "facilities": [
+  {
+   "id": "hq",
+   "name": "Administrative Headquarters",
+   "address": "1315 Dell Ave",
+   "city": "Campbell",
+   "lat": 37.26754,
+   "lon": -121.95388,
+   "note": "Rebuilt 2024. Mon–Fri, 8am–5pm"
+  },
+  {
+   "id": "mccormack",
+   "name": "McCormack Training Center",
+   "address": "485 W Sunnyoaks Ave",
+   "city": "Campbell",
+   "atStation": 80,
+   "note": "4-story concrete tower and classroom"
+  }
+ ]
+}

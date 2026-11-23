@@ -1,0 +1,46 @@
+import asyncio
+from playwright.async_api import async_playwright
+async def main():
+    async with async_playwright() as p:
+        b=await p.chromium.launch(executable_path="/usr/bin/google-chrome",args=["--no-sandbox"])
+        errs=[]
+        ctx=await b.new_context(viewport={"width":1440,"height":900})
+        await ctx.add_init_script("localStorage.clear()")
+        pg=await ctx.new_page(); pg.on("pageerror",lambda e: errs.append(str(e)))
+        pg.on("console",lambda m: errs.append("console: "+m.text) if m.type=="error" and "404" not in m.text else None)
+        async def shot(n): await pg.screenshot(path=f"build/h_{n}.png")
+        await pg.goto("http://localhost:8765/index.html"); await pg.wait_for_timeout(1800); await shot("overview")
+        await pg.click("[data-fb=hosp]"); await pg.wait_for_timeout(400); await shot("menu_hosp")
+        await pg.click("[data-mv='hf:trauma']"); await pg.wait_for_timeout(1300); await shot("hosp_trauma")
+        await pg.click("td button[data-place=VMC]"); await pg.wait_for_timeout(1300); await shot("vmc")
+        await pg.click("[data-act=back]"); await pg.wait_for_timeout(900); await shot("back1")
+        await pg.click("[data-fb=lm]"); await pg.wait_for_timeout(300); await pg.click("[data-mt=lm]"); await pg.wait_for_timeout(300); await shot("menu_lm")
+        await pg.mouse.click(300,600); await pg.wait_for_timeout(300)
+        await pg.click("[data-fb=bat]"); await pg.click("[data-mv='bat:B74']"); await pg.wait_for_timeout(1300); await shot("b74_lm")
+        await pg.click("[data-fb=units]"); await pg.click("[data-mv='uf:truck']"); await pg.wait_for_timeout(1300); await shot("trucks")
+        await pg.click("[data-fb=clear]"); await pg.wait_for_timeout(600)
+        await pg.click("#tabs button[data-mode=study]"); await pg.wait_for_timeout(1000); await shot("study")
+        await pg.click("button[data-game=pin]"); await pg.wait_for_timeout(500); await shot("setup")
+        await pg.click("button[data-count='5']"); await pg.click("button[data-act=start]"); await pg.wait_for_timeout(1300)
+        await pg.mouse.click(520,430); await pg.wait_for_timeout(180); await shot("pin_drop"); await pg.wait_for_timeout(1500); await shot("pin_rev")
+        for i in range(4):
+            await pg.keyboard.press("Enter"); await pg.wait_for_timeout(900); await pg.mouse.click(450+i*30,420); await pg.wait_for_timeout(1500)
+        await pg.keyboard.press("Enter"); await pg.wait_for_timeout(1300); await shot("pin_done")
+        await pg.click("button[data-act=studyhome] >> nth=0"); await pg.wait_for_timeout(600)
+        await pg.click("button[data-game=name]"); await pg.click("button[data-count='5']"); await pg.click("button[data-act=start]"); await pg.wait_for_timeout(1300)
+        # answer correctly 3 times to show streak
+        for i in range(3):
+            idx=await pg.evaluate("(()=>{const g=window.__g;return null})()")
+            await pg.evaluate("document.querySelector('.choices button').click()")
+            await pg.wait_for_timeout(400)
+            await pg.keyboard.press("Enter"); await pg.wait_for_timeout(700)
+        await pg.evaluate("document.querySelector('.choices button').click()"); await pg.wait_for_timeout(800); await shot("name_rev")
+        await ctx.close()
+        ctx=await b.new_context(viewport={"width":390,"height":844}); pg=await ctx.new_page(); pg.on("pageerror",lambda e: errs.append("mob "+str(e)))
+        await pg.goto("http://localhost:8765/index.html"); await pg.wait_for_timeout(1500); await pg.screenshot(path="build/h_mob_over.png")
+        await pg.click("[data-fb=hosp]"); await pg.wait_for_timeout(400); await pg.screenshot(path="build/h_mob_menu.png")
+        await pg.click("[data-mv='table']"); await pg.wait_for_timeout(1200)
+        await pg.evaluate("document.getElementById('panel').style.height='600px'"); await pg.wait_for_timeout(500); await pg.screenshot(path="build/h_mob_table.png")
+        await pg.click("#tabs button[data-mode=study]"); await pg.wait_for_timeout(800); await pg.evaluate("document.getElementById('panel').style.height='700px'"); await pg.wait_for_timeout(400); await pg.screenshot(path="build/h_mob_study.png")
+        print("\n".join(errs) or "no errors"); await b.close()
+asyncio.run(main())
